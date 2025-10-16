@@ -1,0 +1,17 @@
+{
+  "name": "Python + Poetry 1.8.2 + Jupyter",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "curl -sSL https://install.python-poetry.org | python3 - --version 1.8.2 && poetry add jupyter && echo 'Poetry 1.8.2 and Jupyter installed!'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
